@@ -60,7 +60,7 @@
 								<input
 									type="submit"
 									name="subscribe"
-									class="bg-primary-600 max-w-xs h-10"
+									class="bg-primary-600 hover:bg-primary-700 max-w-xs h-10 cursor-pointer"
 									value="Subscribe"
 								/>
 								<p style="margin: 0px auto;">

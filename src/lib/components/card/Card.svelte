@@ -1,5 +1,5 @@
 <script lang="ts">
-	export const imgsrc = '/img/logo.png';
+	export const imgsrc = '/img/logo128.png';
 </script>
 
 <div
