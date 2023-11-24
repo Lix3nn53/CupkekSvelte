@@ -7,15 +7,14 @@
 	import Dropdown from './Dropdown.svelte';
 	import Link from './link/Link.svelte';
 	import LinkButton from './link/LinkButton.svelte';
+	import logo from '$lib/img/logo128.png';
 
 	let path: string = $page.url.pathname;
 
-	let routes: { name: string; path: string }[] = [];
+	let routes: { name: string; path: string; target: '_blank' | '_self' }[] = [];
 	$: routes = [
-		{ name: 'Guide', path: '/guide' },
-		{ name: 'News', path: '/news' },
-		{ name: 'Map', path: '/map' },
-		{ name: 'Store', path: '/store' }
+		{ name: 'Socials', path: '#socials', target: '_self' },
+		{ name: 'Mailing List', path: '#mail-subscribe', target: '_self' }
 	];
 
 	let navigation: HTMLDivElement;
@@ -24,7 +23,7 @@
 	}
 </script>
 
-<nav class="px-2 sm:px-4 py-2.5 rounded">
+<nav class="px-2 sm:px-4 py-2.5 rounded bg-base-100">
 	<div class="md:container flex flex-wrap justify-between items-center mx-auto">
 		<div class="flex flex-row gap-0 md:gap-4">
 			<button
@@ -60,12 +59,15 @@
 				>
 			</button>
 			<Link href="/">
-				<img src="/img/favicon.webp" class="h-14" alt="Logo" />
+				<img src={logo} class="h-14" alt="Logo" />
 			</Link>
-			<div class="my-auto">DROPDOWN</div>
 		</div>
 		<div class="flex md:order-2">
-			<LinkButton href="/login" customClass="capitalize">LOGIN</LinkButton>
+			<LinkButton
+				href="https://store.steampowered.com/app/2671700/Hero_Manager"
+				customClass="capitalize"
+				target="_blank">Wishlist Now!</LinkButton
+			>
 		</div>
 		<div
 			class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
@@ -76,14 +78,14 @@
 				{#each routes as route, i}
 					{#if path === route.path}
 						<li class="py-4 md:py-0 text-right">
-							<LinkButton href={`${route.path}`} style="ghost"
+							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost"
 								><span class="capitalize text-primary-400 font-semibold">{route.name}</span
 								></LinkButton
 							>
 						</li>
 					{:else}
 						<li class="py-4 md:py-0">
-							<LinkButton href={`${route.path}`} style="ghost"
+							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost"
 								><span class="capitalize">{route.name}</span></LinkButton
 							>
 						</li>

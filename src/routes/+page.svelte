@@ -4,104 +4,96 @@
 	import Link from '$lib/components/link/Link.svelte';
 	import LinkButton from '$lib/components/link/LinkButton.svelte';
 	import TooltipCopy from '$lib/components/TooltipCopy.svelte';
+	import logoSteam from '$lib/img/social/steam.ico';
+	import logoDiscord from '$lib/img/social/discord.ico';
+	import logoTwitter from '$lib/img/social/twitter.ico';
+	import logoReddit from '$lib/img/social/reddit.svg';
+	import logoYoutube from '$lib/img/social/youtube.svg';
+	import logoTiktok from '$lib/img/social/tiktok.ico';
+	import logoPresskit from '$lib/img/social/presskit.svg';
 
 	export const prerender = true;
 </script>
 
-<svelte:head>
-	<title>Guardians of Adelia - Dungeon driven Minecraft MMORPG</title>
-</svelte:head>
-
-<div class="w-full flex flex-col items-center">
+<div class="w-full flex flex-col items-center flex-1">
 	<!-- Section 1 -->
-	<div class="container py-16">
-		<div class="flex flex-col lg:flex-row">
-			<div class="my-auto mx-4">
-				<Saos once={true} animation={'from-left 1.2s cubic-bezier(0, 0.7, 0.4, 1) both'}>
-					<h1 class="text-violet-400 text-4xl font-semibold pb-4">
-						aaaaaaaaaaa<br />bbbbbbbbbbbbbbbbb
-					</h1>
-					<div class="flex flex-col gap-2 xl:flex-row">
-						<TooltipCopy />
-
-						<LinkButton href="https://discord.gg/WGfKxGSJmn" target="_blank" customClass="w-full">
-							homeeeeeeee</LinkButton
-						>
-					</div>
-				</Saos>
-			</div>
-			<div class="mx-auto order-first lg:order-1">
-				<Saos once={true} animation={'fade-in 1.6s cubic-bezier(0.5, 0.25, 0.8, 0.7) both'}>
-					<img src="/img/logo.webp" alt="logo" class="section-1-logo" />
-				</Saos>
+	<div class="container flex flex-1">
+		<div class="flex flex-col flex-1 items-center justify-around mt-12">
+			<iframe
+				id="steam-widget"
+				class="max-w-4xl my-12"
+				src="https://store.steampowered.com/widget/2671700/"
+				frameborder="0"
+				width="646"
+				height="190"
+			></iframe>
+			<div class="w-full max-w-xl my-12" id="socials">
+				<LinkButton
+					href="https://store.steampowered.com/app/2671700/Hero_Manager/"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoSteam} alt="steam" class="w-7" />
+					<span>Hero Manager on Steam</span>
+				</LinkButton>
+				<LinkButton
+					href="https://discord.com/invite/k3yj8Az2VC"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoDiscord} alt="discord" class="w-7" />
+					<span>Discord</span>
+				</LinkButton>
+				<LinkButton
+					href="https://twitter.com/cupkekgames"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoTwitter} alt="twitter" class="w-7" />
+					<span>Twitter/X</span>
+				</LinkButton>
+				<LinkButton
+					href="https://www.reddit.com/user/CupkekGames"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoReddit} alt="reddit" class="w-7" />
+					<span>Reddit</span>
+				</LinkButton>
+				<LinkButton
+					href="https://www.youtube.com/@cupkekgames"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoYoutube} alt="youtube" class="w-7" />
+					<span>Youtube</span>
+				</LinkButton>
+				<LinkButton
+					href="https://www.tiktok.com/@cupkekgames"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoTiktok} alt="tiktok" class="w-7" />
+					<span>Tiktok</span>
+				</LinkButton>
+				<LinkButton
+					href="https://store.steampowered.com/app/2671700/Hero_Manager/"
+					target="_blank"
+					customClass="w-full mb-3"
+					style="faded"
+				>
+					<img src={logoPresskit} alt="presskit" class="w-7" />
+					<span>Presskit</span>
+				</LinkButton>
 			</div>
 		</div>
 	</div>
-	<section class="container py-4">
-		<Saos animation={'fade-in 1.6s cubic-bezier(0.5, 0.25, 0.8, 0.7) both'}>
-			<iframe
-				class="mx-auto w-full xl:w-1/2 lg:w-3/4 h-96"
-				src="https://www.youtube.com/embed/-dMbjAkhrBw"
-				title="Trailer Video"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
-			/>
-		</Saos>
-	</section>
-	<!-- Section 2 -->
-	<section class="container mx-auto px-6 py-16 flex flex-col lg:flex-row lg:gap-8">
-		<div class="flex flex-col">
-			<Saos animation={'fade-in 1.6s cubic-bezier(0.5, 0.25, 0.8, 0.7) both'}>
-				<div class="flex items-center flex-wrap mb-20">
-					<div class="w-full lg:w-2/3">
-						<img class="rounded-lg" src="/img/home/twoh.webp" alt="use the force" />
-					</div>
-					<div class="w-full lg:w-1/3 pr-10 pt-4 lg:pt-0 order-1 lg:order-first">
-						<h4 class="text-3xl text-base-800 font-bold mb-3">aaaaaaaaaaaaaaaaaa</h4>
-						<p class="text-base-600 mb-8">aaaaaaaaaaaaa</p>
-					</div>
-				</div>
-			</Saos>
-			<Saos animation={'fade-in 1.6s cubic-bezier(0.5, 0.25, 0.8, 0.7) both'}>
-				<div class="flex items-center flex-wrap mb-20">
-					<div class="w-full lg:w-2/3">
-						<img class="rounded-lg" src="/img/home/dungeon_gate.webp" alt="use the force" />
-					</div>
-					<div class="w-full lg:w-1/3 pl-10 pt-4 lg:pt-0">
-						<h4 class="text-3xl text-base-800 font-bold mb-3">aaaaaaaaaaaa</h4>
-						<p class="text-base-600 mb-8">aaaaaaaaaaaaaaa</p>
-					</div>
-				</div>
-			</Saos>
-			<Saos animation={'fade-in 1.6s cubic-bezier(0.5, 0.25, 0.8, 0.7) both'}>
-				<div class="flex items-center flex-wrap mb-20">
-					<div class="w-full lg:w-2/3">
-						<img class="rounded-lg" src="/img/home/campfire.webp" alt="use the force" />
-					</div>
-					<div class="w-full lg:w-1/3 pr-10 pt-4 lg:pt-0 order-1 lg:order-first">
-						<h4 class="text-3xl text-base-800 font-bold mb-3">Aaaaaaaaaaaaa</h4>
-						<p class="text-base-600 mb-8">
-							bbbbbbbbbbbbbbb<Link href="/guide" customClass="font-bold text-primary-400"
-								>cccccccccccccccccccc</Link
-							>
-						</p>
-					</div>
-				</div>
-			</Saos>
-		</div>
-		<Saos animation={'fade-in 1.6s cubic-bezier(0.5, 0.25, 0.8, 0.7) both'}>
-			<iframe
-				src="https://discord.com/widget?id=452631187010093066&theme=dark"
-				width="350"
-				height="500"
-				frameBorder="0"
-				sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-				title="discord-iframe"
-				class="mx-auto"
-			/>
-		</Saos>
-	</section>
 </div>
 
 <style>
