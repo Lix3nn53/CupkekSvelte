@@ -10,10 +10,102 @@
 	<div class="flex flex-col items-center justify-center mb-8" id="mail-subscribe">
 		<h1>Subscribe to our Mailing List</h1>
 		<p>Get news on any big updates! Your info won't be used for anything else; we promise.</p>
-		<Form bg="transparent" customClass="lg:w-1/2 w-full flex flex-row justify-center items-center">
+		<!-- <Form bg="transparent" customClass="lg:w-1/2 w-full flex flex-row justify-center items-center">
 			<Input type="email" name={null} placeholder="Email Address" id="email" />
 			<Button type="submit" customClass="flex-auto ml-2">Subscribe!</Button>
-		</Form>
+		</Form> -->
+		<div id="mc_embed_shell">
+			<link
+				href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+				rel="stylesheet"
+				type="text/css"
+			/>
+			<div id="mc_embed_signup" class="m-0 bg-base-100">
+				<form
+					action="https://gmail.us12.list-manage.com/subscribe/post?u=a9a82755ff66d6888b02e6475&amp;id=43133820e0&amp;f_id=006e48e0f0"
+					method="post"
+					id="mc-embedded-subscribe-form"
+					name="mc-embedded-subscribe-form"
+					class="validate bg-base-100 m-0"
+					target="_blank"
+				>
+					<div id="mc_embed_signup_scroll">
+						<div class="pb-0 h-9 mb-4" style="width: 96%;">
+							<input
+								type="email"
+								name="EMAIL"
+								class="required email bg-base-50 w-full h-9"
+								id="mce-EMAIL"
+								required=""
+								value=""
+								placeholder="Email Address"
+							/>
+						</div>
+						<div id="mce-responses" class="clear foot">
+							<div class="response" id="mce-error-response" style="display: none;"></div>
+							<div class="response" id="mce-success-response" style="display: none;"></div>
+						</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true">
+							/* real people should not fill this in and expect good things - do not remove this or
+							risk form bot signups */
+							<input
+								type="text"
+								name="b_a9a82755ff66d6888b02e6475_43133820e0"
+								tabindex="-1"
+								value=""
+							/>
+						</div>
+						<div class="optionalParent">
+							<div class="clear foot">
+								<input
+									type="submit"
+									name="subscribe"
+									class="bg-primary-600 max-w-xs h-10"
+									value="Subscribe"
+								/>
+								<p style="margin: 0px auto;">
+									<a
+										href="http://eepurl.com/iEKowE"
+										title="Mailchimp - email marketing made easy and fun"
+										><span
+											style="display: inline-block; background-color: black; border-radius: 4px;"
+											><img
+												class="refferal_badge"
+												src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-light.svg"
+												alt="Intuit Mailchimp"
+												style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"
+											/></span
+										></a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<script
+				type="text/javascript"
+				src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+			></script><script type="text/javascript">
+				(function ($) {
+					window.fnames = new Array();
+					window.ftypes = new Array();
+					fnames[0] = 'EMAIL';
+					ftypes[0] = 'email';
+					fnames[1] = 'FNAME';
+					ftypes[1] = 'text';
+					fnames[2] = 'LNAME';
+					ftypes[2] = 'text';
+					fnames[3] = 'ADDRESS';
+					ftypes[3] = 'address';
+					fnames[4] = 'PHONE';
+					ftypes[4] = 'phone';
+					fnames[5] = 'BIRTHDAY';
+					ftypes[5] = 'birthday';
+				})(jQuery);
+				var $mcj = jQuery.noConflict(true);
+			</script>
+		</div>
 	</div>
 	<div class="md:flex md:items-center md:justify-between">
 		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
