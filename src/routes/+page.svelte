@@ -21,17 +21,17 @@
 		<div class="flex flex-col flex-1 items-center justify-around mt-12">
 			<iframe
 				id="steam-widget"
-				class="max-w-4xl my-12"
+				class="max-w-4xl my-8"
 				src="https://store.steampowered.com/widget/2671700/"
 				frameborder="0"
 				width="646"
 				height="190"
 			></iframe>
-			<div class="w-full max-w-xl my-12" id="socials">
+			<div class="w-full max-w-xl my-8" id="socials">
 				<LinkButton
 					href="https://store.steampowered.com/app/2671700/Hero_Manager/"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoSteam} alt="steam" class="w-7" />
@@ -40,16 +40,16 @@
 				<LinkButton
 					href="https://discord.com/invite/k3yj8Az2VC"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoDiscord} alt="discord" class="w-7" />
-					<span>Discord</span>
+					<span>Join Discord Community</span>
 				</LinkButton>
 				<LinkButton
 					href="https://twitter.com/cupkekgames"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoTwitter} alt="twitter" class="w-7" />
@@ -58,7 +58,7 @@
 				<LinkButton
 					href="https://www.reddit.com/user/CupkekGames"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoReddit} alt="reddit" class="w-7" />
@@ -67,7 +67,7 @@
 				<LinkButton
 					href="https://www.youtube.com/@cupkekgames"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoYoutube} alt="youtube" class="w-7" />
@@ -76,7 +76,7 @@
 				<LinkButton
 					href="https://www.tiktok.com/@cupkekgames"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoTiktok} alt="tiktok" class="w-7" />
@@ -85,7 +85,7 @@
 				<LinkButton
 					href="https://store.steampowered.com/app/2671700/Hero_Manager/"
 					target="_blank"
-					customClass="w-full mb-3"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
 					style="faded"
 				>
 					<img src={logoPresskit} alt="presskit" class="w-7" />
