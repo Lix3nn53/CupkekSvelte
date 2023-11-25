@@ -21,10 +21,9 @@
 		<div class="flex flex-col flex-1 items-center justify-around mt-12">
 			<iframe
 				id="steam-widget"
-				class="max-w-4xl my-8"
+				class="w-full max-w-xl my-8"
 				src="https://store.steampowered.com/widget/2671700/"
 				frameborder="0"
-				width="646"
 				height="190"
 			></iframe>
 			<div class="w-full max-w-xl my-8" id="socials">
