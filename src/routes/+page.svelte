@@ -9,6 +9,7 @@
 	import logoTwitter from '$lib/img/social/twitter.ico';
 	import logoReddit from '$lib/img/social/reddit.svg';
 	import logoYoutube from '$lib/img/social/youtube.svg';
+	import logoInstagram from '$lib/img/social/instagram.png';
 	import logoTiktok from '$lib/img/social/tiktok.ico';
 	import logoPresskit from '$lib/img/social/presskit.svg';
 
@@ -71,6 +72,15 @@
 				>
 					<img src={logoYoutube} alt="youtube" class="w-7" />
 					<span>Youtube</span>
+				</LinkButton>
+				<LinkButton
+					href="https://www.instagram.com/cupkekgames/"
+					target="_blank"
+					customClass="w-full mb-3 transition-all scale-95 hover:scale-100"
+					style="faded"
+				>
+					<img src={logoInstagram} alt="instagram" class="w-7" />
+					<span>Instagram</span>
 				</LinkButton>
 				<LinkButton
 					href="https://www.tiktok.com/@cupkekgames"
