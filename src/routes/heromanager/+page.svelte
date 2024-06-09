@@ -164,7 +164,7 @@
 					style="primary"
 					customClass="my-2"
 				>
-					Development Roadmap and Progress (Codecks)
+					Development Progress and Roadmap (Codecks)
 				</Link>
 				<Link
 					href="https://docs.google.com/document/d/1cfvCc3Vx3Rn7hpIL9-95U35nAD6Y05QbwwvH26eTAxc/edit?usp=sharing"
@@ -172,7 +172,7 @@
 					style="primary"
 					customClass="my-2"
 				>
-					Game Design Document
+					Game Design Document (Google Docs)
 				</Link>
 			</div>
 		</div>
