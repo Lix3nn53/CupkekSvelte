@@ -5,16 +5,6 @@
 	import LinkButton from '$lib/components/link/LinkButton.svelte';
 	import TooltipCopy from '$lib/components/TooltipCopy.svelte';
 	import capsule from '$lib/img/heromanager/store_capsule_main_1280.png';
-	import logoSteam from '$lib/img/social/steam.ico';
-	import logoDiscord from '$lib/img/social/discord.ico';
-	import logoTwitter from '$lib/img/social/twitter.ico';
-	import logoReddit from '$lib/img/social/reddit.svg';
-	import logoYoutube from '$lib/img/social/youtube.svg';
-	import logoInstagram from '$lib/img/social/instagram.png';
-	import logoTiktok from '$lib/img/social/tiktok.ico';
-	import logoPresskit from '$lib/img/social/presskit.svg';
-
-	export const prerender = true;
 </script>
 
 <div class="w-full flex flex-col items-center flex-1 my-4">

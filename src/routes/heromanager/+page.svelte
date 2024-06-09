@@ -9,8 +9,6 @@
 	import base from '$lib/img/heromanager/base.jpg';
 	import lava from '$lib/img/heromanager/lava.jpg';
 	import tavern from '$lib/img/heromanager/tavern.jpg';
-
-	export const prerender = true;
 </script>
 
 <div class="w-full flex flex-col items-center flex-1 my-4">
