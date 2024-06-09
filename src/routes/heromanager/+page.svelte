@@ -16,7 +16,7 @@
 	<div class="container flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
 			<div class="max-w-xl my-4 flex flex-col items-center">
-				<h1 class="mb-3">Hero Manager</h1>
+				<h1 class="mb-3 px-2">Hero Manager</h1>
 				<p class="text-wrap px-4">
 					Hero Manager is a management game with focus on hero psychology, featuring auto-battler
 					combat. Assemble a powerful squad, upgrade your base, form bonds with townsfolk and
@@ -94,9 +94,9 @@
 			</div>
 			<div class="w-full max-w-4xl my-4 flex flex-col items-center">
 				<h1 class="mb-3 px-2">More About Hero Manager</h1>
-				<div class="w-full flex flex-row justify-around my-4">
+				<div class="w-full flex flex-col md:flex-row justify-around my-4">
 					<div class="flex flex-col justify-center">
-						<h1 class="mb-3">Assemble Your Team</h1>
+						<h1 class="mb-3 px-2">Assemble Your Team</h1>
 						<p class="text-wrap px-4">
 							Choose from various heroes to create a powerful adventuring team. Improve your heroes
 							to unlock their full potential, while considering their unique emotional responses
@@ -104,10 +104,14 @@
 							one-of-a-kind hero squad.
 						</p>
 					</div>
-					<img src={icemage} class="max-h-64 my-4 rounded-lg" alt="Capsule" />
+					<img
+						src={icemage}
+						class="max-h-64 my-4 rounded-lg m-2 order-first md:order-last"
+						alt="Capsule"
+					/>
 				</div>
-				<div class="w-full flex flex-row justify-around my-4">
-					<img src={lava} class="max-h-64 my-4 rounded-lg" alt="Capsule" />
+				<div class="w-full flex flex-col md:flex-row justify-around my-4">
+					<img src={lava} class="max-h-64 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Triumph in Battles</h1>
 						<p class="text-wrap px-4">
@@ -117,19 +121,23 @@
 						</p>
 					</div>
 				</div>
-				<div class="w-full flex flex-row justify-around my-4">
+				<div class="w-full flex flex-col md:flex-row justify-around my-4">
 					<div class="flex flex-col justify-center">
-						<h1 class="mb-3">Explore The Town</h1>
+						<h1 class="mb-3 px-2">Explore The Town</h1>
 						<p class="text-wrap px-4">
 							Explore the town's diverse locations and charming characters. In every building,
 							you'll meet a shop owner with a unique personality and story. As you get to know them
 							better, you might get discounts and upgrades that will help you on your journey.
 						</p>
 					</div>
-					<img src={tavern} class="max-h-64 my-4 rounded-lg" alt="Capsule" />
+					<img
+						src={tavern}
+						class="max-h-64 my-4 rounded-lg m-2 order-first md:order-last"
+						alt="Capsule"
+					/>
 				</div>
-				<div class="w-full flex flex-row justify-around my-4">
-					<img src={base} class="max-h-64 my-4 rounded-lg" alt="Capsule" />
+				<div class="w-full flex flex-col md:flex-row justify-around my-4">
+					<img src={base} class="max-h-64 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Upgrade Your Base</h1>
 						<p class="text-wrap px-4">
@@ -141,7 +149,7 @@
 				</div>
 			</div>
 			<div class="max-w-xl my-4 flex flex-col items-center">
-				<h1 class="mb-3" id="presskit">Press Kit</h1>
+				<h1 class="mb-3 px-2" id="presskit">Press Kit</h1>
 
 				<Link
 					href="https://drive.google.com/drive/folders/1fmuwY_h75KfqYgxcT_R3kE2QQPlB-tou?usp=sharing"

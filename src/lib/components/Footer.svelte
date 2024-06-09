@@ -14,7 +14,7 @@
 			<Input type="email" name={null} placeholder="Email Address" id="email" />
 			<Button type="submit" customClass="flex-auto ml-2">Subscribe!</Button>
 		</Form> -->
-		<div id="mc_embed_shell">
+		<div id="mc_embed_shell" class="w-full max-w-xl">
 			<link
 				href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
 				rel="stylesheet"
