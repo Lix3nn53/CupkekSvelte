@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let bg = 'bg-base-900';
+	export let bg = 'bg-neutral-900';
 	export let text = 'text-base-50';
 	export let customClass = '';
 
@@ -7,5 +7,5 @@
 </script>
 
 <form class={className}>
-  <slot />
+	<slot />
 </form>

@@ -5,7 +5,7 @@
 
 <div class="switch dog-rollover">
 	<input class="doggo" {id} type="checkbox" />
-	<label class="toggle-item bg-base-100" for={id} on:click={onSwitch}>
+	<label class="toggle-item bg-neutral-100" for={id} on:click={onSwitch}>
 		<div class="dog">
 			<div class="ear" />
 			<div class="ear right" />
@@ -45,7 +45,9 @@
 		background: #222;
 		border-radius: 50%;
 		transform: translate(8px, 14px);
-		box-shadow: 16px 0 0 #222, 22px -4px 0 12px #e4ac04;
+		box-shadow:
+			16px 0 0 #222,
+			22px -4px 0 12px #e4ac04;
 	}
 	.dog-rollover label .ear {
 		width: 18px;
@@ -56,7 +58,9 @@
 		background: #f9bb00;
 		margin-bottom: -5px;
 		border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-		box-shadow: inset 4px 0 0 0px #fff, inset -4px 0 0 0px #fff;
+		box-shadow:
+			inset 4px 0 0 0px #fff,
+			inset -4px 0 0 0px #fff;
 		transform: rotate(-40deg);
 	}
 	.dog-rollover label .ear.right {

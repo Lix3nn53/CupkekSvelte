@@ -24,7 +24,7 @@
 
 <label for="theme" class="switch">
 	<input id="theme" type="checkbox" on:click={toggleTheme} checked={!isDarkMode} />
-	<span class="switch-button bg-base-100 text-base-700" />
+	<span class="switch-button bg-neutral-100 text-base-700" />
 </label>
 
 <style>

@@ -13,8 +13,8 @@
 
 	let routes: { name: string; path: string; target: '_blank' | '_self' }[] = [];
 	$: routes = [
-		{ name: 'Socials', path: '#socials', target: '_self' },
-		{ name: 'Mailing List', path: '#mail-subscribe', target: '_self' }
+		{ name: 'Home', path: '/', target: '_self' },
+		{ name: 'Hero Manager', path: '/heromanager', target: '_self' }
 	];
 
 	let navigation: HTMLDivElement;
@@ -23,13 +23,13 @@
 	}
 </script>
 
-<nav class="px-2 sm:px-4 py-2.5 rounded bg-base-100">
+<nav class="px-2 sm:px-4 py-2.5 bg-neutral-900">
 	<div class="md:container flex flex-wrap justify-between items-center mx-auto">
 		<div class="flex flex-row gap-0 md:gap-4">
 			<button
 				data-collapse-toggle="mobile-menu-4"
 				type="button"
-				class="inline-flex items-center rounded-lg px-4 md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				class="inline-flex items-center rounded-lg px-4 md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 hover:bg-gray-700 focus:ring-gray-600"
 				aria-controls="mobile-menu-4"
 				aria-expanded="false"
 				on:click={() => toggle()}
@@ -58,14 +58,17 @@
 					/></svg
 				>
 			</button>
-			<Link href="/">
-				<img src={logo} class="h-14" alt="Logo" />
+			<Link href="/" style="ghost">
+				<div class="h-14 flex flex-row justify-center items-center">
+					<img src={logo} class="h-14" alt="Logo" />
+					<span>Cupkek Games</span>
+				</div>
 			</Link>
 		</div>
-		<div class="flex md:order-2">
+		<div class="md:order-2 w-32 sm:w-auto">
 			<LinkButton
 				href="https://store.steampowered.com/app/2671700/Hero_Manager"
-				customClass="capitalize"
+				customClass="capitalize px-5 py-2.5"
 				target="_blank">Wishlist Now!</LinkButton
 			>
 		</div>
@@ -77,16 +80,15 @@
 			<ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:font-medium">
 				{#each routes as route, i}
 					{#if path === route.path}
-						<li class="py-4 md:py-0 text-right">
-							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost"
-								><span class="capitalize text-primary-400 font-semibold">{route.name}</span
-								></LinkButton
+						<li class="py-4 md:py-0">
+							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost" selected
+								>{route.name}</LinkButton
 							>
 						</li>
 					{:else}
 						<li class="py-4 md:py-0">
 							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost"
-								><span class="capitalize">{route.name}</span></LinkButton
+								>{route.name}</LinkButton
 							>
 						</li>
 					{/if}

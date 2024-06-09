@@ -6,7 +6,7 @@
 	import Button from './button/Button.svelte';
 </script>
 
-<footer class="p-4 rounded-lg shadow md:p-6 bg-base-100">
+<footer class="p-4 shadow md:p-6 bg-neutral-900 text-neutral-50">
 	<div class="flex flex-col items-center justify-center mb-8" id="mail-subscribe">
 		<h1>Subscribe to our Mailing List</h1>
 		<p>Get news on any big updates! Your info won't be used for anything else; we promise.</p>
@@ -20,13 +20,13 @@
 				rel="stylesheet"
 				type="text/css"
 			/>
-			<div id="mc_embed_signup" class="m-0 bg-base-100">
+			<div id="mc_embed_signup" class="m-0">
 				<form
 					action="https://gmail.us12.list-manage.com/subscribe/post?u=a9a82755ff66d6888b02e6475&amp;id=43133820e0&amp;f_id=006e48e0f0"
 					method="post"
 					id="mc-embedded-subscribe-form"
 					name="mc-embedded-subscribe-form"
-					class="validate bg-base-100 m-0"
+					class="validate m-0"
 					target="_blank"
 				>
 					<div id="mc_embed_signup_scroll">
@@ -34,7 +34,7 @@
 							<input
 								type="email"
 								name="EMAIL"
-								class="required email bg-base-50 w-full h-9"
+								class="required email bg-neutral-600 w-full h-9"
 								id="mce-EMAIL"
 								required=""
 								value=""
@@ -60,7 +60,7 @@
 								<input
 									type="submit"
 									name="subscribe"
-									class="bg-primary-600 hover:bg-primary-700 max-w-xs h-10 cursor-pointer"
+									class="subscribe bg-purple-700 hover:bg-purple-400 max-w-xs h-10 cursor-pointer"
 									value="Subscribe"
 								/>
 								<p style="margin: 0px auto;">
@@ -108,11 +108,11 @@
 		</div>
 	</div>
 	<div class="md:flex md:items-center md:justify-between">
-		<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+		<span class="text-sm sm:text-center"
 			>© {new Date().getFullYear()}
 			<Link href="/">Cupkek Games</Link>. All Rights Reserved.
 		</span>
-		<ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+		<ul class="flex flex-wrap items-center mt-3 text-sm sm:mt-0">
 			<li class="mr-4 md:mr-6">
 				<Link href="#">About</Link>
 			</li>
@@ -122,9 +122,15 @@
 			<li class="mr-4 md:mr-6">
 				<Link href="#">Terms of Service</Link>
 			</li>
-			<li class="mr-4 md:mr-6">
+			<!-- <li class="mr-4 md:mr-6">
 				<SwitchTheme />
-			</li>
+			</li> -->
 		</ul>
 	</div>
 </footer>
+
+<style>
+	#mc_embed_signup input {
+		border: none;
+	}
+</style>

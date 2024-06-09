@@ -2,32 +2,37 @@
 	export let href: string;
 	export let target: '_self' | '_blank' = '_self';
 	export let style: 'primary' | 'secondary' | 'ghost' | 'faded' = 'primary';
+	export let selected: boolean = false;
 	export let outline = false;
 	export let customClass: String = '';
 
-	let styleClass = 'bg-primary-600 hover:bg-primary-700 focus:ring-primary-300/[.2]';
+	let text = 'text-neutral-50';
+	let styleClass = 'bg-purple-700 hover:bg-purple-500 focus:ring-purple-300/[.2]';
 	if (style === 'secondary') {
-		styleClass = 'bg-secondary-600 hover:bg-secondary-700 focus:ring-secondary-300/[.2]';
+		styleClass = 'bg-secondary-600 hover:bg-secondary-400 focus:ring-secondary-300/[.2]';
 	} else if (style === 'ghost') {
 		styleClass =
-			'hover:bg-base-200/[.2] focus:ring-base-300/[.2] dark:hover:bg-base-700/[.2] dark:focus:ring-base-800/[.2]';
+			'hover:bg-transparent focus:ring-transparent hover:bg-transparent focus:ring-transparent';
+		text = 'text-neutral-50 hover:text-purple-200 focus:text-purple-200';
 	} else if (style === 'faded') {
 		styleClass =
-			'bg-base-500 hover:bg-base-400 focus:ring-base-400/[.2] dark:bg-base-200 dark:hover:bg-base-300 dark:focus:ring-base-300/[.2]';
+			'bg-neutral-500 hover:bg-neutral-400 focus:ring-base-400/[.2] bg-neutral-200 hover:bg-neutral-300 focus:ring-base-300/[.2]';
 	}
 
 	if (outline) {
 		styleClass += ' border bg-transparent';
 		if (style === 'primary') {
-			styleClass +=
-				' border-primary-600 text-primary-600 hover:border-primary-700 hover:text-slate-50';
+			styleClass += ' border-purple-600 hover:border-purple-700';
 		} else if (style === 'secondary') {
-			styleClass +=
-				' border-secondary-600 text-secondary-600 hover:border-secondary-700 hover:text-slate-50';
+			styleClass += ' border-secondary-600 hover:border-secondary-700';
 		}
 	}
 
-	let className = `flex flex-row justify-between items-center hover:no-underline focus:ring px-5 py-2.5 text-center mr-3 md:mr-0 font-medium rounded-lg ${styleClass} ${customClass}`;
+	if (selected) {
+		text = 'text-purple-400 hover:text-purple-200 focus:text-purple-200 font-semibold';
+	}
+
+	let className = `flex flex-row justify-center items-center hover:no-underline focus:ring text-center mr-3 md:mr-0 font-medium rounded-lg ${styleClass} ${text} ${customClass}`;
 </script>
 
 <a {href} class={className} {target} rel="noreferrer">
