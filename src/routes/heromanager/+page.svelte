@@ -93,10 +93,10 @@
 				</LinkButton>
 			</div>
 			<div class="w-full max-w-4xl my-4 flex flex-col items-center">
-				<h1 class="mb-3 px-2" id="presskit">More About Hero Manager</h1>
+				<h1 class="mb-3 px-2">More About Hero Manager</h1>
 				<div class="w-full flex flex-row justify-around my-4">
 					<div class="flex flex-col justify-center">
-						<h1 class="mb-3" id="presskit">Assemble Your Team</h1>
+						<h1 class="mb-3">Assemble Your Team</h1>
 						<p class="text-wrap px-4">
 							Choose from various heroes to create a powerful adventuring team. Improve your heroes
 							to unlock their full potential, while considering their unique emotional responses
@@ -109,7 +109,7 @@
 				<div class="w-full flex flex-row justify-around my-4">
 					<img src={lava} class="max-h-64 my-4 rounded-lg" alt="Capsule" />
 					<div class="flex flex-col justify-center">
-						<h1 class="mb-3 px-2" id="presskit">Triumph in Battles</h1>
+						<h1 class="mb-3 px-2">Triumph in Battles</h1>
 						<p class="text-wrap px-4">
 							Engage in thrilling battles against formidable foes using an auto-battler combat
 							system. Protect your town by neutralizing threats and claim rich rewards, including
@@ -119,7 +119,7 @@
 				</div>
 				<div class="w-full flex flex-row justify-around my-4">
 					<div class="flex flex-col justify-center">
-						<h1 class="mb-3" id="presskit">Explore The Town</h1>
+						<h1 class="mb-3">Explore The Town</h1>
 						<p class="text-wrap px-4">
 							Explore the town's diverse locations and charming characters. In every building,
 							you'll meet a shop owner with a unique personality and story. As you get to know them
@@ -131,7 +131,7 @@
 				<div class="w-full flex flex-row justify-around my-4">
 					<img src={base} class="max-h-64 my-4 rounded-lg" alt="Capsule" />
 					<div class="flex flex-col justify-center">
-						<h1 class="mb-3 px-2" id="presskit">Upgrade Your Base</h1>
+						<h1 class="mb-3 px-2">Upgrade Your Base</h1>
 						<p class="text-wrap px-4">
 							Your base serves as the heart of your operations. It allows you to improve your heroes
 							through diverse means. As you progress you'll be able to upgrade different sections of
