@@ -150,13 +150,29 @@
 			</div>
 			<div class="max-w-xl my-4 flex flex-col items-center">
 				<h1 class="mb-3 px-2" id="presskit">Press Kit</h1>
-
 				<Link
 					href="https://drive.google.com/drive/folders/1fmuwY_h75KfqYgxcT_R3kE2QQPlB-tou?usp=sharing"
 					target="_blank"
 					style="primary"
+					customClass="my-2"
 				>
-					Press Kit Google Drive Link
+					Logos and Images (Google Drive)
+				</Link>
+				<Link
+					href="https://open.codecks.io/cupkekheromanager"
+					target="_blank"
+					style="primary"
+					customClass="my-2"
+				>
+					Development Roadmap and Progress (Codecks)
+				</Link>
+				<Link
+					href="https://docs.google.com/document/d/1cfvCc3Vx3Rn7hpIL9-95U35nAD6Y05QbwwvH26eTAxc/edit?usp=sharing"
+					target="_blank"
+					style="primary"
+					customClass="my-2"
+				>
+					Game Design Document
 				</Link>
 			</div>
 		</div>
