@@ -1,4 +1,6 @@
-<script context="module" lang="ts">
+<script lang="ts">
+	import { onMount } from 'svelte';
+
 	import Saos from 'saos';
 	import Button from '$lib/components/button/Button.svelte';
 	import Link from '$lib/components/link/Link.svelte';
@@ -11,6 +13,12 @@
 	import capsule from '$lib/img/heromanager/store_capsule_header_1920_shade.png';
 
 	let capsuleBg = `background-image: url(${capsule});`;
+
+	onMount(() => {
+		const { hash } = document.location;
+		const scrollTo = hash && document.getElementById(hash.slice(1));
+		if (scrollTo) scrollTo.scrollIntoView();
+	});
 </script>
 
 <div class="w-full flex flex-col items-center flex-1">

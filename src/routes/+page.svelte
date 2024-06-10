@@ -1,4 +1,5 @@
-<script context="module" lang="ts">
+<!-- <script context="module" lang="ts"> -->
+<script lang="ts">
 	import Saos from 'saos';
 	import Button from '$lib/components/button/Button.svelte';
 	import Link from '$lib/components/link/Link.svelte';
