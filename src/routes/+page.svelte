@@ -14,16 +14,16 @@
 	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
 			<div
-				class="w-full bg-no-repeat bg-center bg-cover flex justify-center h-[32rem] md:h-[48rem] xl:h-[64rem]"
+				class="w-full bg-no-repeat bg-center bg-cover flex justify-center h-[40rem] md:h-[48rem]"
 				style={`${capsuleBg}`}
 			>
 				<div class="max-w-xl container flex justify-center p-16">
 					<div
 						class="max-w-xl mb-4 flex flex-col items-center h-min bg-neutral-900/90 rounded-xl p-4"
 					>
-						<h1 class="mb-3">Welcome!</h1>
+						<h1 class="mb-3 text-center">Welcome!</h1>
 						<p class="text-wrap px-4 mb-8">We are a small indie team working on our first game!</p>
-						<h1 class="mb-3">Wishlist On Steam</h1>
+						<h1 class="mb-3 text-center">Wishlist On Steam</h1>
 						<LinkButton
 							href="https://store.steampowered.com/app/2671700/Hero_Manager/"
 							target="_blank"
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="my-4 flex flex-col items-center flex-wrap px-4" id="socials">
-				<h1 class="mb-3">Join Our Community!</h1>
+				<h1 class="mb-3 text-center">Join Our Community!</h1>
 				<LinkButton
 					href="https://discord.com/invite/k3yj8Az2VC"
 					target="_blank"
@@ -47,7 +47,7 @@
 					<i class="fa-brands fa-discord fa-2xl mx-5 my-3"></i>
 					<span class="mx-5 my-3">Discord</span>
 				</LinkButton>
-				<h1 class="mb-3">Socials</h1>
+				<h1 class="mb-3 text-center">Socials</h1>
 				<LinkButton
 					href="https://twitter.com/cupkekgames"
 					target="_blank"
@@ -93,7 +93,7 @@
 					<i class="fa-brands fa-tiktok fa-2xl mx-5 my-3"></i>
 					<span class="mx-5 my-3">Tiktok</span>
 				</LinkButton>
-				<h1 class="mb-3">Press Kit</h1>
+				<h1 class="mb-3 text-center">Press Kit</h1>
 				<LinkButton
 					href="/heromanager#presskit"
 					customClass="w-full mb-3 justify-between"

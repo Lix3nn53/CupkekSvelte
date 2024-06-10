@@ -18,21 +18,21 @@
 	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
 			<div
-				class="w-full bg-no-repeat bg-center bg-cover flex justify-center h-[32rem] md:h-[48rem] xl:h-[64rem]"
+				class="w-full bg-no-repeat bg-center bg-cover flex justify-center h-[40rem] md:h-[48rem]"
 				style={`${capsuleBg}`}
 			>
 				<div class="max-w-xl container flex justify-center p-16">
 					<div
 						class="max-w-xl mb-4 flex flex-col items-center h-min bg-neutral-900/90 rounded-xl p-4"
 					>
-						<h1 class="mb-3">Hero Manager</h1>
+						<h1 class="mb-3 text-center">Hero Manager</h1>
 						<p class="text-wrap px-4 mb-8">
 							Hero Manager is a management game with focus on hero psychology, featuring
 							auto-battler combat. Assemble a powerful squad, upgrade your base, form bonds with
 							townsfolk and maintain high morale among your team. Can you lead your heroes to
 							victory?
 						</p>
-						<h1 class="mb-3">Wishlist On Steam</h1>
+						<h1 class="mb-3 text-center">Wishlist On Steam</h1>
 						<LinkButton
 							href="https://store.steampowered.com/app/2671700/Hero_Manager/"
 							target="_blank"
