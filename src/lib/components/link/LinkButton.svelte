@@ -32,7 +32,7 @@
 		text = 'text-purple-400 hover:text-purple-200 focus:text-purple-200 font-semibold';
 	}
 
-	let className = `flex flex-row justify-center items-center hover:no-underline focus:ring text-center mr-3 md:mr-0 font-medium rounded-lg ${styleClass} ${text} ${customClass}`;
+	let className = `flex flex-row justify-center items-center hover:no-underline focus:ring text-center font-medium rounded-lg ${styleClass} ${text} ${customClass}`;
 </script>
 
 <a {href} class={className} {target} rel="noreferrer">

@@ -13,8 +13,8 @@
 
 	let routes: { name: string; path: string; target: '_blank' | '_self' }[] = [];
 	$: routes = [
-		{ name: 'Home', path: '/', target: '_self' },
-		{ name: 'Hero Manager', path: '/heromanager', target: '_self' }
+		{ name: 'Hero Manager', path: '/', target: '_self' },
+		{ name: 'Presskit', path: '/presskit', target: '_self' }
 	];
 
 	let navigation: HTMLDivElement;
@@ -24,8 +24,8 @@
 </script>
 
 <nav class="px-2 sm:px-4 py-2.5 bg-neutral-900">
-	<div class="md:container flex flex-wrap justify-between items-center mx-auto">
-		<div class="flex flex-row gap-0 md:gap-4">
+	<div class="md:container flex flex-col gap-2 md:flex-row justify-between items-center mx-auto">
+		<div class="flex flex-row w-full md:w-auto">
 			<button
 				data-collapse-toggle="mobile-menu-4"
 				type="button"
@@ -59,26 +59,31 @@
 				>
 			</button>
 			<Link href="/" style="ghost">
-				<div class="h-14 flex flex-row justify-center items-center">
+				<div class="h-14 flex flex-row justify-center items-center gap-1">
 					<img src={logo} class="h-14" alt="Logo" />
 					<span>Cupkek Games</span>
 				</div>
 			</Link>
 		</div>
-		<div class="md:order-2 w-32 sm:w-auto flex">
+		<div class="md:order-2 flex justify-around gap-2 min-h-12 flex-1 sm:flex-none">
 			<LinkButton
 				href="https://discord.com/invite/k3yj8Az2VC"
-				customClass="capitalize px-5 py-2.5 mr-0 md:mr-4 hidden md:flex"
-				target="_blank"><i class="fa-brands fa-discord fa-xl mr-2"></i>Discord</LinkButton
+				customClass="capitalize px-5 py-2.5 h-12"
+				target="_blank"
+				><i class="fa-brands fa-discord fa-xl"></i><span class="hidden md:flex ml-2">Discord</span
+				></LinkButton
 			>
 			<LinkButton
 				href="https://store.steampowered.com/app/2671700/Hero_Manager"
-				customClass="capitalize px-5 py-2.5"
-				target="_blank"><i class="fa-brands fa-steam fa-xl mr-2"></i>Wishlist Now!</LinkButton
+				customClass="capitalize px-5 py-2.5 h-12"
+				target="_blank"
+				><i class="fa-brands fa-steam fa-xl"></i><span class="hidden md:flex ml-2"
+					>Wishlist Now!</span
+				></LinkButton
 			>
 		</div>
 		<div
-			class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+			class="hidden justify-around items-center flex-1 md:flex md:w-auto md:order-1"
 			id="mobile-menu-4"
 			bind:this={navigation}
 		>
