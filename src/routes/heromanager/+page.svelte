@@ -4,26 +4,44 @@
 	import Link from '$lib/components/link/Link.svelte';
 	import LinkButton from '$lib/components/link/LinkButton.svelte';
 	import TooltipCopy from '$lib/components/TooltipCopy.svelte';
-	import capsule from '$lib/img/heromanager/store_capsule_main_1280.png';
 	import icemage from '$lib/img/heromanager/icemage.gif';
 	import base from '$lib/img/heromanager/base.jpg';
 	import lava from '$lib/img/heromanager/lava.jpg';
 	import tavern from '$lib/img/heromanager/tavern.jpg';
+	import capsule from '$lib/img/heromanager/store_capsule_header_1920_shade.png';
+
+	let capsuleBg = `background-image: url(${capsule});height:48rem;`;
 </script>
 
-<div class="w-full flex flex-col items-center flex-1 my-4">
+<div class="w-full flex flex-col items-center flex-1">
 	<!-- Section 1 -->
-	<div class="container flex flex-1">
+	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
-			<div class="max-w-xl my-4 flex flex-col items-center">
-				<h1 class="mb-3 px-2">Hero Manager</h1>
-				<p class="text-wrap px-4">
-					Hero Manager is a management game with focus on hero psychology, featuring auto-battler
-					combat. Assemble a powerful squad, upgrade your base, form bonds with townsfolk and
-					maintain high morale among your team. Can you lead your heroes to victory?
-				</p>
+			<div class="w-full bg-no-repeat bg-center flex justify-center" style={`${capsuleBg}`}>
+				<div class="max-w-xl container flex justify-center p-16">
+					<div
+						class="max-w-xl mb-4 flex flex-col items-center h-min bg-neutral-900/90 rounded-xl p-4"
+					>
+						<h1 class="mb-3">Hero Manager</h1>
+						<p class="text-wrap px-4 mb-8">
+							Hero Manager is a management game with focus on hero psychology, featuring
+							auto-battler combat. Assemble a powerful squad, upgrade your base, form bonds with
+							townsfolk and maintain high morale among your team. Can you lead your heroes to
+							victory?
+						</p>
+						<h1 class="mb-3">Wishlist On Steam</h1>
+						<LinkButton
+							href="https://store.steampowered.com/app/2671700/Hero_Manager/"
+							target="_blank"
+							customClass="mb-3 justify-between"
+							style="primary"
+						>
+							<i class="fa-brands fa-steam fa-2xl mx-5 my-3"></i>
+							<span class="mx-5 my-3">Hero Manager on Steam</span>
+						</LinkButton>
+					</div>
+				</div>
 			</div>
-			<img src={capsule} class="max-h-96 my-4 rounded-lg" alt="Capsule" />
 			<div
 				class="w-full max-w-xl my-4 flex flex-row items-center justify-between flex-wrap px-4"
 				id="socials"
@@ -92,7 +110,7 @@
 					<i class="fa-solid fa-newspaper fa-2xl mx-5 my-3"></i>
 				</LinkButton>
 			</div>
-			<div class="w-full max-w-4xl my-4 flex flex-col items-center">
+			<div class="w-full max-w-7xl my-4 flex flex-col items-center">
 				<h1 class="mb-3 px-2">More About Hero Manager</h1>
 				<div class="w-full flex flex-col md:flex-row justify-around my-4">
 					<div class="flex flex-col justify-center">
@@ -106,12 +124,12 @@
 					</div>
 					<img
 						src={icemage}
-						class="max-h-64 my-4 rounded-lg m-2 order-first md:order-last"
+						class="max-h-96 my-4 rounded-lg m-2 order-first md:order-last"
 						alt="Capsule"
 					/>
 				</div>
 				<div class="w-full flex flex-col md:flex-row justify-around my-4">
-					<img src={lava} class="max-h-64 my-4 rounded-lg m-2" alt="Capsule" />
+					<img src={lava} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Triumph in Battles</h1>
 						<p class="text-wrap px-4">
@@ -132,12 +150,12 @@
 					</div>
 					<img
 						src={tavern}
-						class="max-h-64 my-4 rounded-lg m-2 order-first md:order-last"
+						class="max-h-96 my-4 rounded-lg m-2 order-first md:order-last"
 						alt="Capsule"
 					/>
 				</div>
 				<div class="w-full flex flex-col md:flex-row justify-around my-4">
-					<img src={base} class="max-h-64 my-4 rounded-lg m-2" alt="Capsule" />
+					<img src={base} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Upgrade Your Base</h1>
 						<p class="text-wrap px-4">

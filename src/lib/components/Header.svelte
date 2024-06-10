@@ -65,11 +65,16 @@
 				</div>
 			</Link>
 		</div>
-		<div class="md:order-2 w-32 sm:w-auto">
+		<div class="md:order-2 w-32 sm:w-auto flex">
+			<LinkButton
+				href="https://discord.com/invite/k3yj8Az2VC"
+				customClass="capitalize px-5 py-2.5 mr-0 md:mr-4 hidden md:flex"
+				target="_blank"><i class="fa-brands fa-discord fa-xl mr-2"></i>Discord</LinkButton
+			>
 			<LinkButton
 				href="https://store.steampowered.com/app/2671700/Hero_Manager"
 				customClass="capitalize px-5 py-2.5"
-				target="_blank">Wishlist Now!</LinkButton
+				target="_blank"><i class="fa-brands fa-steam fa-xl mr-2"></i>Wishlist Now!</LinkButton
 			>
 		</div>
 		<div

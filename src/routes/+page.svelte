@@ -4,29 +4,36 @@
 	import Link from '$lib/components/link/Link.svelte';
 	import LinkButton from '$lib/components/link/LinkButton.svelte';
 	import TooltipCopy from '$lib/components/TooltipCopy.svelte';
-	import capsule from '$lib/img/heromanager/store_capsule_main_1280.png';
+	import capsule from '$lib/img/heromanager/store_capsule_header_1920_shade.png';
+
+	let capsuleBg = `background-image: url(${capsule});height:48rem;`;
 </script>
 
-<div class="w-full flex flex-col items-center flex-1 my-4">
+<div class="w-full flex flex-col items-center flex-1">
 	<!-- Section 1 -->
-	<div class="container flex flex-1">
+	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
-			<div class="max-w-xl my-4 flex flex-col items-center">
-				<h1 class="mb-3">Welcome!</h1>
-				<p class="text-wrap px-4">We are a small indie team working on our first game!</p>
+			<div class="w-full bg-no-repeat bg-center flex justify-center" style={`${capsuleBg}`}>
+				<div class="max-w-xl container flex justify-center p-16">
+					<div
+						class="max-w-xl mb-4 flex flex-col items-center h-min bg-neutral-900/90 rounded-xl p-4"
+					>
+						<h1 class="mb-3">Welcome!</h1>
+						<p class="text-wrap px-4 mb-8">We are a small indie team working on our first game!</p>
+						<h1 class="mb-3">Wishlist On Steam</h1>
+						<LinkButton
+							href="https://store.steampowered.com/app/2671700/Hero_Manager/"
+							target="_blank"
+							customClass="mb-3 justify-between"
+							style="primary"
+						>
+							<i class="fa-brands fa-steam fa-2xl mx-5 my-3"></i>
+							<span class="mx-5 my-3">Hero Manager on Steam</span>
+						</LinkButton>
+					</div>
+				</div>
 			</div>
-			<img src={capsule} class="max-h-96 my-4 rounded-lg" alt="Capsule" />
 			<div class="my-4 flex flex-col items-center flex-wrap px-4" id="socials">
-				<h1 class="mb-3">Wishlist On Steam</h1>
-				<LinkButton
-					href="https://store.steampowered.com/app/2671700/Hero_Manager/"
-					target="_blank"
-					customClass="w-full mb-3 justify-between"
-					style="primary"
-				>
-					<i class="fa-brands fa-steam fa-2xl mx-5 my-3"></i>
-					<span class="mx-5 my-3">Hero Manager on Steam</span>
-				</LinkButton>
 				<h1 class="mb-3">Join Our Community!</h1>
 				<LinkButton
 					href="https://discord.com/invite/k3yj8Az2VC"
