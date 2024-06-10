@@ -62,8 +62,10 @@
 				</div>
 			</div>
 			<div class="w-full max-w-7xl mt-8 flex flex-col items-center">
-				<h1 class="mb-3 px-2">More About Hero Manager</h1>
-				<div class="w-full flex flex-col md:flex-row justify-around my-4">
+				<h1 class="mb-3 px-2 p-4 rounded-xl bg-neutral-800">More About Hero Manager</h1>
+				<div
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-900 my-4"
+				>
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Assemble Your Team</h1>
 						<p class="text-wrap px-4">
@@ -79,7 +81,9 @@
 						alt="Capsule"
 					/>
 				</div>
-				<div class="w-full flex flex-col md:flex-row justify-around my-4">
+				<div
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-800 my-4"
+				>
 					<img src={lava} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Triumph in Battles</h1>
@@ -90,7 +94,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="w-full flex flex-col md:flex-row justify-around my-4">
+				<div
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-900 my-4"
+				>
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Explore The Town</h1>
 						<p class="text-wrap px-4">
@@ -105,7 +111,9 @@
 						alt="Capsule"
 					/>
 				</div>
-				<div class="w-full flex flex-col md:flex-row justify-around my-4">
+				<div
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-800 my-4"
+				>
 					<img src={base} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Upgrade Your Base</h1>
@@ -117,67 +125,69 @@
 					</div>
 				</div>
 			</div>
-			<h1 class="px-2 my-4">Socials</h1>
-			<div
-				class="w-full max-w-xl my-4 flex flex-row items-center justify-between flex-wrap px-4"
-				id="socials"
-			>
-				<LinkButton
-					href="https://store.steampowered.com/app/2671700/Hero_Manager/"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
+			<div class="w-full max-w-xl p-4 rounded-xl bg-neutral-900 my-16">
+				<h1 class="text-center">Socials</h1>
+				<div
+					class="w-full max-w-xl my-4 flex flex-row items-center justify-between flex-wrap px-4"
+					id="socials"
 				>
-					<i class="fa-brands fa-steam fa-2xl"></i>
-				</LinkButton>
-				<LinkButton
-					href="https://discord.com/invite/k3yj8Az2VC"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
-				>
-					<i class="fa-brands fa-discord fa-2xl mx-5 my-3"></i>
-				</LinkButton>
-				<LinkButton
-					href="https://twitter.com/cupkekgames"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
-				>
-					<i class="fa-brands fa-twitter fa-2xl mx-5 my-3"></i>
-				</LinkButton>
-				<LinkButton
-					href="https://www.reddit.com/user/CupkekGames"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
-				>
-					<i class="fa-brands fa-reddit fa-2xl mx-5 my-3"></i>
-				</LinkButton>
-				<LinkButton
-					href="https://www.youtube.com/@cupkekgames"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
-				>
-					<i class="fa-brands fa-youtube fa-2xl mx-5 my-3"></i>
-				</LinkButton>
-				<LinkButton
-					href="https://www.instagram.com/cupkekgames/"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
-				>
-					<i class="fa-brands fa-instagram fa-2xl mx-5 my-3"></i>
-				</LinkButton>
-				<LinkButton
-					href="https://www.tiktok.com/@cupkekgames"
-					target="_blank"
-					customClass="w-12 h-12 mb-3 justify-center"
-					style="primary"
-				>
-					<i class="fa-brands fa-tiktok fa-2xl mx-5 my-3"></i>
-				</LinkButton>
+					<LinkButton
+						href="https://store.steampowered.com/app/2671700/Hero_Manager/"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-steam fa-2xl"></i>
+					</LinkButton>
+					<LinkButton
+						href="https://discord.com/invite/k3yj8Az2VC"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-discord fa-2xl mx-5 my-3"></i>
+					</LinkButton>
+					<LinkButton
+						href="https://twitter.com/cupkekgames"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-twitter fa-2xl mx-5 my-3"></i>
+					</LinkButton>
+					<LinkButton
+						href="https://www.reddit.com/user/CupkekGames"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-reddit fa-2xl mx-5 my-3"></i>
+					</LinkButton>
+					<LinkButton
+						href="https://www.youtube.com/@cupkekgames"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-youtube fa-2xl mx-5 my-3"></i>
+					</LinkButton>
+					<LinkButton
+						href="https://www.instagram.com/cupkekgames/"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-instagram fa-2xl mx-5 my-3"></i>
+					</LinkButton>
+					<LinkButton
+						href="https://www.tiktok.com/@cupkekgames"
+						target="_blank"
+						customClass="w-12 h-12 mb-3 justify-center"
+						style="primary"
+					>
+						<i class="fa-brands fa-tiktok fa-2xl mx-5 my-3"></i>
+					</LinkButton>
+				</div>
 			</div>
 		</div>
 	</div>
