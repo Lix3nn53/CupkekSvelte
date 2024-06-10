@@ -6,14 +6,17 @@
 	import TooltipCopy from '$lib/components/TooltipCopy.svelte';
 	import capsule from '$lib/img/heromanager/store_capsule_header_1920_shade.png';
 
-	let capsuleBg = `background-image: url(${capsule});height:48rem;`;
+	let capsuleBg = `background-image: url(${capsule});`;
 </script>
 
 <div class="w-full flex flex-col items-center flex-1">
 	<!-- Section 1 -->
 	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
-			<div class="w-full bg-no-repeat bg-center flex justify-center" style={`${capsuleBg}`}>
+			<div
+				class="w-full bg-no-repeat bg-center bg-cover flex justify-center h-[32rem] md:h-[48rem] xl:h-[64rem]"
+				style={`${capsuleBg}`}
+			>
 				<div class="max-w-xl container flex justify-center p-16">
 					<div
 						class="max-w-xl mb-4 flex flex-col items-center h-min bg-neutral-900/90 rounded-xl p-4"
