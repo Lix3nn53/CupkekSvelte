@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let bg = 'bg-neutral-900';
+	export let bg = 'bg-slate-900';
 	export let text = 'text-base-50';
 	export let customClass = '';
 

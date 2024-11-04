@@ -23,7 +23,7 @@
 	}
 </script>
 
-<nav class="px-2 sm:px-4 py-2.5 bg-neutral-900">
+<nav class="px-2 sm:px-4 py-2.5 bg-slate-900">
 	<div class="md:container flex flex-col gap-2 md:flex-row justify-between items-center mx-auto">
 		<div class="flex flex-row w-full md:w-auto">
 			<button

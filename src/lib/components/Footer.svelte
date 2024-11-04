@@ -6,7 +6,7 @@
 	import Button from './button/Button.svelte';
 </script>
 
-<footer class="p-4 shadow md:p-6 bg-neutral-900 text-neutral-50">
+<footer class="p-4 shadow md:p-6 bg-slate-900 text-slate-50">
 	<div class="flex flex-col items-center justify-center mb-8" id="mail-subscribe">
 		<h1>Subscribe to our Mailing List</h1>
 		<p>Get news on any big updates! Your info won't be used for anything else; we promise.</p>
@@ -34,7 +34,7 @@
 							<input
 								type="email"
 								name="EMAIL"
-								class="required email bg-neutral-600 w-full h-9"
+								class="required email bg-slate-600 w-full h-9"
 								id="mce-EMAIL"
 								required=""
 								value=""

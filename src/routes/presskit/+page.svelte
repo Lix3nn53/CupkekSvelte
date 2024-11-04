@@ -10,7 +10,7 @@
 	import base from '$lib/img/heromanager/base.jpg';
 	import lava from '$lib/img/heromanager/lava.jpg';
 	import tavern from '$lib/img/heromanager/tavern.jpg';
-	import capsule from '$lib/img/heromanager/store_capsule_header_1920_shade.png';
+	import capsule from '$lib/img/heromanager/store_capsule_header.png';
 
 	let capsuleBg = `background-image: url(${capsule});`;
 

@@ -1,4 +1,4 @@
-<div class="fullpage-bg bg-neutral-50" />
+<div class="fullpage-bg bg-slate-50" />
 
 <style>
 	.fullpage-bg {

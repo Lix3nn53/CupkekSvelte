@@ -10,7 +10,7 @@
 	import base from '$lib/img/heromanager/base.jpg';
 	import lava from '$lib/img/heromanager/lava.jpg';
 	import tavern from '$lib/img/heromanager/tavern.jpg';
-	import capsule from '$lib/img/heromanager/store_capsule_header_1920_shade.png';
+	import capsule from '$lib/img/heromanager/store_capsule_header.png';
 
 	let capsuleBg = `background-image: url(${capsule});`;
 
@@ -25,46 +25,52 @@
 	<!-- Section 1 -->
 	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
-			<div
-				class="w-full bg-no-repeat bg-center bg-cover flex justify-center md:justify-start h-[40rem] md:h-[48rem]"
-				style={`${capsuleBg}`}
-			>
-				<div class="flex justify-center pt-16 p-0 md:p-16">
-					<div class="max-w-xl flex flex-col items-center h-min bg-neutral-900/90 rounded-xl p-8">
-						<h1 class="mb-3 text-center">Hero Manager</h1>
-						<p class="text-wrap mb-8">
-							Hero Manager is a management game with focus on hero psychology, featuring
-							auto-battler combat. Assemble a powerful squad, upgrade your base, form bonds with
-							townsfolk and maintain high morale among your team. Can you lead your heroes to
-							victory?
-						</p>
-						<div class="flex flex-col md:flex-row flex-1 gap-2 justify-around">
-							<LinkButton
-								href="https://store.steampowered.com/app/2671700/Hero_Manager/"
-								target="_blank"
-								customClass="mb-3 justify-between"
-								style="primary"
-							>
-								<i class="fa-brands fa-steam fa-2xl mx-5 my-3"></i>
-								<span class="mx-5 my-3">Wishlist Now!</span>
-							</LinkButton>
-							<LinkButton
-								href="https://discord.com/invite/k3yj8Az2VC"
-								target="_blank"
-								customClass="mb-3 justify-between"
-								style="primary"
-							>
-								<i class="fa-brands fa-discord fa-2xl mx-5 my-3"></i>
-								<span class="mx-5 my-3">Discord</span>
-							</LinkButton>
+			<div class="w-full flex items-center justify-center bg-slate-700">
+				<div class="flex flex-col xl:flex-row-reverse justify-center p-4">
+					<img
+						class="bg-no-repeat bg-center bg-contain rounded-xl m-4"
+						src={capsule}
+						alt="capsule"
+					/>
+					<div class="flex justify-center items-center">
+						<div
+							class="max-w-2xl flex flex-row flex-col items-center h-min bg-slate-900/95 rounded-xl p-4"
+						>
+							<h1 class="mb-3 text-center">Hero Manager</h1>
+							<p class="text-wrap mb-8">
+								Hero Manager is a management game with focus on hero psychology, featuring
+								auto-battler combat. Assemble a powerful squad, upgrade your base, form bonds with
+								townsfolk and maintain high morale among your team. Can you lead your heroes to
+								victory?
+							</p>
+							<div class="flex flex-col md:flex-row flex-1 gap-2 justify-around">
+								<LinkButton
+									href="https://store.steampowered.com/app/2671700/Hero_Manager/"
+									target="_blank"
+									customClass="mb-3 justify-between"
+									style="primary"
+								>
+									<i class="fa-brands fa-steam fa-2xl mx-5 my-3"></i>
+									<span class="mx-5 my-3">Wishlist Now!</span>
+								</LinkButton>
+								<LinkButton
+									href="https://discord.com/invite/k3yj8Az2VC"
+									target="_blank"
+									customClass="mb-3 justify-between"
+									style="primary"
+								>
+									<i class="fa-brands fa-discord fa-2xl mx-5 my-3"></i>
+									<span class="mx-5 my-3">Discord</span>
+								</LinkButton>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="w-full max-w-7xl mt-8 flex flex-col items-center">
-				<h1 class="mb-3 px-2 p-4 rounded-xl bg-neutral-800">More About Hero Manager</h1>
+				<h1 class="mb-3 px-2 p-4 rounded-xl bg-slate-800">More About Hero Manager</h1>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-900 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-900 my-4"
 				>
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Assemble Your Team</h1>
@@ -82,20 +88,20 @@
 					/>
 				</div>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-800 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-700 my-4"
 				>
 					<img src={lava} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Triumph in Battles</h1>
 						<p class="text-wrap px-4">
 							Engage in thrilling battles against formidable foes using an auto-battler combat
-							system. Protect your town by neutralizing threats and claim rich rewards, including
+							system. Protect your town by slateizing threats and claim rich rewards, including
 							gold, experience, fame, and rare equipment.
 						</p>
 					</div>
 				</div>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-900 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-900 my-4"
 				>
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Explore The Town</h1>
@@ -112,7 +118,7 @@
 					/>
 				</div>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-neutral-800 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-700 my-4"
 				>
 					<img src={base} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
@@ -125,7 +131,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-full max-w-xl p-4 rounded-xl bg-neutral-900 my-16">
+			<div class="w-full max-w-xl p-4 rounded-xl bg-slate-900 my-16">
 				<h1 class="text-center">Socials</h1>
 				<div
 					class="w-full max-w-xl my-4 flex flex-row items-center justify-between flex-wrap px-4"

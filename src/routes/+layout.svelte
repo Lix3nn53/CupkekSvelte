@@ -10,7 +10,7 @@
 <BackgroundColor />
 <Header />
 
-<main class="flex-1 flex bg-neutral-800 text-neutral-50">
+<main class="flex-1 flex bg-slate-800 text-slate-50">
 	<slot />
 </main>
 

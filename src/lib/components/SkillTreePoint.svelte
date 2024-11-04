@@ -18,7 +18,7 @@
 	style="background-image: url('{src}'); top: {top}px; left: {left}px;"
 	on:click={toggleCard}
 >
-	<div class="card hidden rounded-lg p-2 bg-neutral-50/[.9]" bind:this={card}>
+	<div class="card hidden rounded-lg p-2 bg-slate-50/[.9]" bind:this={card}>
 		<h3 class="text-xl font-bold">{name}</h3>
 		<div class="text-sm">
 			<p class="font-semibold pb-4">

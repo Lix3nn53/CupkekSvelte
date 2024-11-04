@@ -6,7 +6,7 @@
 	export let placeholder = '';
 
 	let className =
-		'bg-neutral-100 border border-base-400 text-base-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block flex-1 p-2.5';
+		'bg-slate-100 border border-base-400 text-base-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block flex-1 p-2.5';
 </script>
 
 <div class="w-full flex items-center justify-center">
