@@ -25,7 +25,7 @@
 	<!-- Section 1 -->
 	<div class="w-full flex flex-1">
 		<div class="flex flex-col flex-1 items-center justify-around">
-			<div class="w-full flex items-center justify-center bg-slate-700">
+			<div class="w-full flex items-center justify-center bg-stone-700">
 				<div class="flex flex-col xl:flex-row-reverse justify-center p-4">
 					<img
 						class="bg-no-repeat bg-center bg-contain rounded-xl m-4"
@@ -34,7 +34,7 @@
 					/>
 					<div class="flex justify-center items-center">
 						<div
-							class="max-w-2xl flex flex-row flex-col items-center h-min bg-slate-900/95 rounded-xl p-4"
+							class="max-w-2xl flex flex-row flex-col items-center h-min bg-stone-800 rounded-xl p-4"
 						>
 							<h1 class="mb-3 text-center">Hero Manager</h1>
 							<p class="text-wrap mb-8">
@@ -68,9 +68,9 @@
 				</div>
 			</div>
 			<div class="w-full max-w-7xl mt-8 flex flex-col items-center">
-				<h1 class="mb-3 px-2 p-4 rounded-xl bg-slate-800">More About Hero Manager</h1>
+				<h1 class="mb-3 px-2 p-4 rounded-xl bg-stone-700">More About Hero Manager</h1>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-900 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-stone-800 my-4"
 				>
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Assemble Your Team</h1>
@@ -88,20 +88,20 @@
 					/>
 				</div>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-700 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-stone-700 my-4"
 				>
 					<img src={lava} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Triumph in Battles</h1>
 						<p class="text-wrap px-4">
 							Engage in thrilling battles against formidable foes using an auto-battler combat
-							system. Protect your town by slateizing threats and claim rich rewards, including
+							system. Protect your town by stoneizing threats and claim rich rewards, including
 							gold, experience, fame, and rare equipment.
 						</p>
 					</div>
 				</div>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-900 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-stone-800 my-4"
 				>
 					<div class="flex flex-col justify-center">
 						<h1 class="mb-3 px-2">Explore The Town</h1>
@@ -118,7 +118,7 @@
 					/>
 				</div>
 				<div
-					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-slate-700 my-4"
+					class="w-full flex flex-col md:flex-row justify-around p-4 rounded-xl bg-stone-700 my-4"
 				>
 					<img src={base} class="max-h-96 my-4 rounded-lg m-2" alt="Capsule" />
 					<div class="flex flex-col justify-center">
@@ -131,7 +131,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-full max-w-xl p-4 rounded-xl bg-slate-900 my-16">
+			<div class="w-full max-w-xl p-4 rounded-xl bg-stone-800 my-16">
 				<h1 class="text-center">Socials</h1>
 				<div
 					class="w-full max-w-xl my-4 flex flex-row items-center justify-between flex-wrap px-4"

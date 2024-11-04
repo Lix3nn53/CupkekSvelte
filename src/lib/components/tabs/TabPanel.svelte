@@ -16,7 +16,7 @@
 	<div
 		id={panel.id}
 		aria-labelledby={$labeledBy[panel.id]}
-		class="bg-slate-50 p-9 rounded-lg shadow"
+		class="bg-stone-50 p-9 rounded-lg shadow"
 		role="tabpanel"
 	>
 		<slot />

@@ -6,17 +6,17 @@
 	export let outline = false;
 	export let customClass: String = '';
 
-	let text = 'text-slate-50';
+	let text = 'text-stone-50';
 	let styleClass = 'bg-purple-700 hover:bg-purple-500 focus:ring-purple-300/[.2]';
 	if (style === 'secondary') {
 		styleClass = 'bg-secondary-600 hover:bg-secondary-400 focus:ring-secondary-300/[.2]';
 	} else if (style === 'ghost') {
 		styleClass =
 			'hover:bg-transparent focus:ring-transparent hover:bg-transparent focus:ring-transparent';
-		text = 'text-slate-50 hover:text-purple-200 focus:text-purple-200';
+		text = 'text-stone-50 hover:text-purple-200 focus:text-purple-200';
 	} else if (style === 'faded') {
 		styleClass =
-			'bg-slate-500 hover:bg-slate-400 focus:ring-base-400/[.2] bg-slate-200 hover:bg-slate-300 focus:ring-base-300/[.2]';
+			'bg-stone-500 hover:bg-stone-400 focus:ring-base-400/[.2] bg-stone-200 hover:bg-stone-300 focus:ring-base-300/[.2]';
 	}
 
 	if (outline) {

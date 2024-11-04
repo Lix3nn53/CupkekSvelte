@@ -4,16 +4,16 @@
 	export let target: '_self' | '_blank' = '_self';
 	export let style: 'ghost' | 'primary' | 'secondary' = 'ghost';
 
-	let className = `hover:no-underline text-slate-50 ${customClass}`;
+	let className = `hover:no-underline text-stone-50 ${customClass}`;
 
-	let text = 'text-slate-50';
+	let text = 'text-stone-50';
 
 	if (style === 'primary') {
 		className += ` text-purple-500 hover:text-purple-200 focus:text-purple-200`;
 	} else if (style === 'secondary') {
 		className += ` text-secondary-500`;
 	} else if (style === 'ghost') {
-		text = 'text-slate-50 hover:text-purple-200 focus:text-purple-200';
+		text = 'text-stone-50 hover:text-purple-200 focus:text-purple-200';
 	}
 </script>
 

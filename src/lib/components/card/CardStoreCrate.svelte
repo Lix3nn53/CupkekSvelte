@@ -3,7 +3,7 @@
 
 	export let customClass: string = '';
 
-	let className = `flex flex-col lg:flex-row gap-4 bg-slate-100 p-4 rounded-lg ${customClass}`;
+	let className = `flex flex-col lg:flex-row gap-4 bg-stone-100 p-4 rounded-lg ${customClass}`;
 </script>
 
 <div class={className}>

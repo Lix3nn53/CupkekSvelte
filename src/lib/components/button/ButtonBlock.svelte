@@ -35,7 +35,7 @@
 
 	.button-content {
 		display: block;
-		transform: translate(6px, -6px);
+		transform: transtone(6px, -6px);
 		transition: all 0.2s ease;
 		position: relative;
 		z-index: 10;
@@ -72,7 +72,7 @@
 	}
 
 	.button:hover .button-content {
-		transform: translate(4px, -4px);
+		transform: transtone(4px, -4px);
 	}
 
 	.button:hover:before {
@@ -84,7 +84,7 @@
 	}
 
 	.button:active .button-content {
-		transform: translate(0, 0);
+		transform: transtone(0, 0);
 	}
 
 	.button:active:before {

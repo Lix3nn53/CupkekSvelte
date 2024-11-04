@@ -2,8 +2,10 @@
 
 /* Works on Firefox */
 * {
+    --scrollbar-color-main: #e7e5e4;
+    --scrollbar-color-bg: #1c1917;
     scrollbar-width: thin;
-    scrollbar-color: #0e0e0e #8d99ae;
+    scrollbar-color: var(--scrollbar-color-main) var(--scrollbar-color-bg);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -12,10 +14,10 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: #8d99ae;
+    background: var(--scrollbar-color-bg);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #0e0e0e;
+    background-color: var(--scrollbar-color-main);
     border-radius: 20px;
 }

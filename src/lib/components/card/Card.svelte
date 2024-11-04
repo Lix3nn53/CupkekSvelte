@@ -3,7 +3,7 @@
 </script>
 
 <div class="card bg-white rounded-lg border border-gray-200 shadow-md bg-gray-800 border-gray-700">
-	<a href="#" class="bg-slate-50">
+	<a href="#" class="bg-stone-50">
 		<img class="rounded-t-lg max-h-96 mx-auto" src={imgsrc} alt="" />
 	</a>
 	<div class="p-5">
