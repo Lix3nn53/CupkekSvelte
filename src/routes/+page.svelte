@@ -6,11 +6,11 @@
 	import Link from '$lib/components/link/Link.svelte';
 	import LinkButton from '$lib/components/link/LinkButton.svelte';
 	import TooltipCopy from '$lib/components/TooltipCopy.svelte';
-	import icemage from '$lib/img/heromanager/icemage.gif';
-	import base from '$lib/img/heromanager/base.jpg';
-	import lava from '$lib/img/heromanager/lava.jpg';
-	import tavern from '$lib/img/heromanager/tavern.jpg';
-	import capsule from '$lib/img/heromanager/store_capsule_header.png';
+	import icemage from '$lib/img/heromanager/icemage.webp';
+	import base from '$lib/img/heromanager/base.webp';
+	import lava from '$lib/img/heromanager/lava.webp';
+	import tavern from '$lib/img/heromanager/tavern.webp';
+	import capsule from '$lib/img/heromanager/store_capsule_header.webp';
 
 	let capsuleBg = `background-image: url(${capsule});`;
 
