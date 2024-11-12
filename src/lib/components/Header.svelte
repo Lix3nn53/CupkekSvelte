@@ -14,7 +14,8 @@
 	let routes: { name: string; path: string; target: '_blank' | '_self' }[] = [];
 	$: routes = [
 		{ name: 'Hero Manager', path: '/', target: '_self' },
-		{ name: 'Presskit', path: '/presskit', target: '_self' }
+		{ name: 'Presskit', path: '/presskit', target: '_self' },
+		{ name: 'GameDev Tools', path: 'https://docs.cupkek.games/', target: '_blank' }
 	];
 
 	let navigation: HTMLDivElement;
