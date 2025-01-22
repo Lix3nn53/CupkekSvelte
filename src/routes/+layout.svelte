@@ -6,6 +6,18 @@
 	import BackgroundColor from '$lib/components/BackgroundColor.svelte';
 </script>
 
+<svelte:head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S38ZBFW1S2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S38ZBFW1S2');
+</script>
+</svelte:head>
+
 <Background />
 <BackgroundColor />
 <Header />
