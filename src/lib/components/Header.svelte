@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { user } from './../../stores';
 	import { onDestroy } from 'svelte';
-	import Button from './button/Button.svelte';
+	import { Button } from 'flowbite-svelte';
 
-	import Dropdown from './Dropdown.svelte';
-	import Link from './link/Link.svelte';
-	import LinkButton from './link/LinkButton.svelte';
+	import { A } from 'flowbite-svelte';
 	import logo from '$lib/img/logo128.png';
 
 	let path: string = $page.url.pathname;
@@ -25,7 +22,7 @@
 </script>
 
 <nav class="px-2 sm:px-4 py-2.5 bg-stone-800">
-	<div class="md:container flex flex-col gap-2 md:flex-row justify-between items-center mx-auto">
+	<div class="md:container flex flex-col gap-2 md:flex-row justify-between items-center">
 		<div class="flex flex-row w-full md:w-auto">
 			<button
 				data-collapse-toggle="mobile-menu-4"
@@ -59,28 +56,26 @@
 					/></svg
 				>
 			</button>
-			<Link href="/" style="ghost">
+			<A href="/" style="ghost">
 				<div class="h-14 flex flex-row justify-center items-center gap-1">
 					<img src={logo} class="h-14" alt="Logo" />
 					<span>Cupkek Games</span>
 				</div>
-			</Link>
+			</A>
 		</div>
 		<div class="md:order-2 flex justify-around gap-2 min-h-12 flex-1 sm:flex-none">
-			<LinkButton
+			<Button
 				href="https://discord.com/invite/k3yj8Az2VC"
-				customClass="capitalize px-5 py-2.5 h-12"
 				target="_blank"
 				><i class="fa-brands fa-discord fa-xl"></i><span class="hidden md:flex ml-2">Discord</span
-				></LinkButton
+				></Button
 			>
-			<LinkButton
+			<Button
 				href="https://store.steampowered.com/app/2671700/Hero_Manager"
-				customClass="capitalize px-5 py-2.5 h-12"
 				target="_blank"
 				><i class="fa-brands fa-steam fa-xl"></i><span class="hidden md:flex ml-2"
 					>Wishlist Now!</span
-				></LinkButton
+				></Button
 			>
 		</div>
 		<div
@@ -92,14 +87,14 @@
 				{#each routes as route, i}
 					{#if path === route.path}
 						<li class="py-4 md:py-0">
-							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost" selected
-								>{route.name}</LinkButton
+							<Button href={`${route.path}`} target={`${route.target}`} style="ghost"
+								>{route.name}</Button
 							>
 						</li>
 					{:else}
 						<li class="py-4 md:py-0">
-							<LinkButton href={`${route.path}`} target={`${route.target}`} style="ghost"
-								>{route.name}</LinkButton
+							<Button href={`${route.path}`} target={`${route.target}`} style="ghost"
+								>{route.name}</Button
 							>
 						</li>
 					{/if}

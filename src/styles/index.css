@@ -39,7 +39,7 @@ Typography
 --------------------------------------------------------------*/
 
 :root {
-	font-family: 'Exo', sans-serif;
+	font-family: 'Roboto Flex', serif;
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 }
